@@ -14,8 +14,8 @@ labels = {
 }
 
 def make_predictions(test, model, labels):
-    x_test = mit_test.iloc[:, :187]
-    y_test = mit_test.iloc[:, 187]
+    x_test = test.iloc[:, :187]
+    y_test = test.iloc[:, 187]
 
     x_test = x_test.values
     x_test = x_test.reshape(x_test.shape[0], x_test.shape[1], 1)
