@@ -1,0 +1,9 @@
+This directory diretly consists of an inference script as well as a sample dataset(columns not copied).
+
+The preloaded model has been saved as as a ".h5" file and can be preloaded using the latest tensorflow version v2.16.1  using load_model
+
+The Data does not need preprocessing only reshaped to fit the model accurately, that part has been conducted by the "function" in the inference script splits the data into 2 parts X & Y,
+allowing us to categorically predict the value of the last column.
+
+Once the categorical value has been predicted it is then compared aagainst an existing dictionary of labels that we have understood from the DATASET.
+
