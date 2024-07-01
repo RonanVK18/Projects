@@ -12,3 +12,14 @@ Test_dat.csv : Each row is individual readings of clients, last row belongs to t
 Test_dat.csv : Each row is individual readings of clients, last row belongs to the 2(Premature Ventricular Contraction) class.
 Test_dat.csv : Each row is individual readings of clients, last row belongs to the 3(Fusion of Ventricular & Normal) class.
 Test_dat.csv : Each row is individual readings of clients, last row belongs to the 4(Fusion of Paced & Normal) class.
+
+
+The MIT-BIH Arrhythmia Dataset is a widely used benchmark for evaluating ECG classification algorithms and arrhythmia detection systems. 
+The dataset contains 48 half-hour excerpts of two-channel ambulatory ECG recordings, digitized at 360 samples per second with 11-bit resolution over a 10 mV range.
+
+The mitbih_test.csv file typically includes a subset of the 48 records in the MIT-BIH Arrhythmia Dataset. 
+The specific records used for testing are often chosen to ensure a balanced representation of different arrhythmia types and to avoid overlap with the training set.
+
+The model the data has been trained on has been resampled to avoid any sort of bias observed in the model due to an unbalanced dataset.
+
+The samples provided are samples extracted for each class from the mitbih_test.csv dataset, this data has been preprocessed and only needs to be fit into the model for appropriate class predictiions.
