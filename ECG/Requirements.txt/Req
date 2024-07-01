@@ -7,3 +7,8 @@ allowing us to categorically predict the value of the last column.
 
 Once the categorical value has been predicted it is then compared aagainst an existing dictionary of labels that we have understood from the DATASET.
 
+Test_dat.csv : Each row is individual readings of clients, last row belongs to the 0(Normal) class.
+Test_dat.csv : Each row is individual readings of clients, last row belongs to the 1(Atrial Premature) class.
+Test_dat.csv : Each row is individual readings of clients, last row belongs to the 2(Premature Ventricular Contraction) class.
+Test_dat.csv : Each row is individual readings of clients, last row belongs to the 3(Fusion of Ventricular & Normal) class.
+Test_dat.csv : Each row is individual readings of clients, last row belongs to the 4(Fusion of Paced & Normal) class.
