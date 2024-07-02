@@ -29,6 +29,27 @@ def make_predictions(test, model, labels):
     predicted_labels = [labels[pred] for pred in y_pred_classes]
 
     return predicted_labels
+    
+def plot_ecg(test, n):
+    plt.figure(figsize=(28, 12))  
+    test.iloc[n, :187].plot(color='blue')  
+
+    plt.title(f'ECG of Customer {n+1}', fontsize=16)
+    plt.xlabel('Time (ms)', fontsize=14)
+    plt.ylabel('Amplitude (mV)', fontsize=14)
+
+    plt.grid(True, linestyle='--', alpha=0.7)
+
+    plt.show()
+
+try:
+    n = int(input("Which Customer ECG do you want to plot: "))
+    if n < 0 or n >= len(test):
+        print(f"Invalid customer index. Please enter a number between 0 and {len(test) - 1}.")
+    else:
+        plot_ecg(test, n)
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
 
 test = pd.read_csv('/path_to_data')
 predicted_labels = make_predictions(test, model, labels)
