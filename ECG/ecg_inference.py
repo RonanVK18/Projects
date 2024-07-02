@@ -53,4 +53,4 @@ except ValueError:
 
 test = pd.read_csv('/path_to_data')
 predicted_labels = make_predictions(test, model, labels)
-#print(predicted_labels)
+print(predicted_labels)
